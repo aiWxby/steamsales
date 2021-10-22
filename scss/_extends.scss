@@ -1,0 +1,17 @@
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%transition {
+    transition: all 0.5s ease-out;
+}
+
+%transition-light {
+    transition: all 0.3s ease-out;
+}
+
+%scaleUp-light {
+    animation: scaleUp 1s infinite ease-in-out alternate-reverse;
+}

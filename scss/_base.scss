@@ -1,0 +1,25 @@
+/* ------------------------------- Root Rules ------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+    color: $light-color;
+    background-color: $main-bg;
+    font: {
+        family: main-font;
+        size: map-get($map: $fontsize-map, $key: bigger);
+    }
+}
+
+::selection {
+    color: rgb(37, 37, 37);
+    background: map-get($map: $main-color-map, $key: default);
+}
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Element Rules ----------------------------- */
+/* -------------------------------------------------------------------------- */

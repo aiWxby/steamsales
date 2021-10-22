@@ -1,0 +1,37 @@
+.fullpage {
+    height: 100vh;
+    background-color: $main-bg;
+    @extend %flexCenter;
+    background: linear-gradient(rgba(0, 0, 0, 0), $main-bg 85%),
+        url('/assets/images/main/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    padding: 25px;
+    text-align: justify;
+    border-radius: map-get($map: $radius-map, $key: default);
+    margin: 20px auto;
+    &--colored {
+        box-shadow: 1px 6px 15px rgba(black, 0.5);
+        background-color: $component-bg;
+    }
+}
+
+.wrap {
+    width: 80%;
+    margin: auto;
+    &:first-of-type {
+        margin-top: 160px;
+    }
+}
+
+.footer {
+    @extend %flexCenter;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}

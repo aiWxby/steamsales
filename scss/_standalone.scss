@@ -1,0 +1,133 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Class Rules                                */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Layout Classes ----------------------------- */
+.bg {
+    &--theme {
+        background-color: map-get($map: $main-color-map, $key: default);
+    }
+    &--main {
+        background-color: $main-bg;
+    }
+    &--comp {
+        background-color: $component-bg;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Color Classes ----------------------------- */
+.color--main {
+    color: map-get($map: $main-color-map, $key: default);
+}
+
+.color--warning {
+    color: red;
+}
+
+.link--theme {
+    color: map-get($map: $main-color-map, $key: default);
+    @extend %transition;
+    &:hover {
+        color: map-get($map: $main-color-map, $key: lighter);
+        @extend %transition;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------- Classes like Attributes ------------------------ */
+.pointer {
+    cursor: pointer !important;
+}
+
+.head-title {
+    font-family: title-font;
+    font-size: 4rem;
+    line-height: 0.8;
+}
+
+.title {
+    font-family: title-font;
+    font-size: 3rem;
+}
+
+.sub-title {
+    font-family: title-font;
+    font-size: 2rem;
+}
+
+.sale-title {
+    font-family: AUYT;
+}
+
+/* ---------------------------- Animation Classes --------------------------- */
+.bell-animation {
+    animation: bellRotate 1s infinite ease-in-out alternate-reverse,
+        bellGlow 2s infinite ease-in-out alternate-reverse;
+}
+
+.title-move {
+    animation: titleAnimation 1.5s infinite ease-in-out alternate-reverse;
+}
+
+.scale-up {
+    @extend %scaleUp-light;
+}
+/* -------------------------------------------------------------------------- */
+
+.pos-rel {
+    position: relative;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 10px black;
+}
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- Spaces --------------------------------- */
+$mt: 10;
+@while $mt <= 50 {
+    .mt-#{$mt} {
+        margin-top: $mt#{'px'};
+    }
+    $mt: $mt + 10;
+}
+
+$mb: 10;
+@while $mb <= 50 {
+    .mb-#{$mb} {
+        margin-bottom: $mb#{'px'};
+    }
+    $mb: $mb + 10;
+}
+
+$my: 10;
+@while $my <= 50 {
+    .my-#{$my} {
+        margin: $my#{'px'}+#{'0px'};
+    }
+    $my: $my + 10;
+}
+
+$mr: 10;
+@while $mr <= 50 {
+    .mr-#{$mr} {
+        margin-right: $mr#{'px'};
+    }
+    $mr: $mr + 10;
+}
+
+$ml: 10;
+@while $ml <= 50 {
+    .ml-#{$ml} {
+        margin-left: $ml#{'px'};
+    }
+    $ml: $ml + 10;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
