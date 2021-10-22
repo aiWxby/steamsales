@@ -9,7 +9,7 @@ Bir JavaScript frameworkü kullanabilmek hoş fakat nihayetinde hepsinin çekird
 Çok basit. Steamin dönemlik indirimlerine kalan süreyi sayan bir websitesi. Bunun yanı sıra site sahibinin oyun önerilerini kullanıcıya sunabilmek için bir slider bulunuyor.
 
 ## Ekstra
-Klasörlerin içine; SCSS klasörünü, Babel ve Webpack ayalarının olduğu klasörü, Webpack ve Babel ile işlenmeden önceki Vanilla JavaScript dosyalarını bıraktım.
+Klasörlerin içine; SCSS klasörünü, Babel ve Webpack ayalarının olduğu klasörü, Webpack ve Babel ile işlenmeden önceki Vanilla JavaScript dosyalarını bıraktım. Aynı zamanda, her projemde yaptığım gibi kodlamaya geçmeden önce kafamdaki halini Figma'da tasarladım. İlk, ön tasarım hali root klasöründe, "Ön Tasarım.png" dosyasında. Kodlamaya geçtikten sonra yaptığım eklemelerle ve değişikliklerle kıyaslamak isterseniz diye ekledim. ^.^
 
 Vanilla JavaScript dosyalarını şuralarda bulabilirsiniz:
 - "webpack+babel" klasörü.
