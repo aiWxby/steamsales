@@ -1,3 +1,5 @@
+![](https://i.imgur.com/LMADax0.png)
+
 # Vanilla JavaScript Pratiği
 Bir JavaScript frameworkü kullanabilmek hoş fakat nihayetinde hepsinin çekirdeği JavaScript. JavaScripti kavrayabilmek, diğer framework ve/veya kütüphanelere geçerken oldukça büyük kolaylık sağlıyor. Ben de bu projemde JavaScriptin şu konularında pratik yaptım:
 - DOM.
